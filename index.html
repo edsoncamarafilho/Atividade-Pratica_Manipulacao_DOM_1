@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+<body>
+    <button id="btnTrocarTexto">CLIQUE AQUI PARA MUDAR O TEXTO</button>
+    <p id="textoExibido">AQUI VAI APARECER ALGUMA COISA...</p>
+
+    <script>
+        document.getElementById('btnTrocarTexto').addEventListener('click', function() {
+            let nomeUsuario = prompt('Digite seu nome:');
+            if (nomeUsuario) {
+                document.getElementById('textoExibido').textContent = `E aí, ${nomeUsuario}! Você está deixando o seu site dinâmico.`;
+            }
+        });
+    </script>
+
+
+    
+        <p>Link para acessar a Atividade 1.1 Manipulando o DOM</p> 
+        <a href="./Atividade_1.1 DOM/1.1.html">DOM 1.1</a>
+</body>
+</html>
